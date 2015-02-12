@@ -1,0 +1,2 @@
+﻿[$RootKey$\TeamFoundation\SourceControl\Checkin Policies]
+"VersionOne.Integration.Tfs.Policy"="$PackageFolder$\VersionOne.Integration.Tfs.Policy.dll"
