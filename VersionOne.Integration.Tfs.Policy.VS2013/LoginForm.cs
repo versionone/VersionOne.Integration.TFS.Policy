@@ -140,5 +140,29 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
         {
             txtProxyUrl.Enabled = txtProxyUsername.Enabled = txtProxyPassword.Enabled = txtProxyDomain.Enabled = enabled;
         }
+
+        private bool IsSchemaValid(string url)
+        {
+            Uri uriResult;
+            return Uri.TryCreate(url, UriKind.Absolute, out uriResult)
+                          && (uriResult.Scheme == Uri.UriSchemeHttp
+                              || uriResult.Scheme == Uri.UriSchemeHttps);
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            if (!IsSchemaValid(cbUrl.Text))
+            {
+                DialogResult = DialogResult.None;
+                MessageBox.Show("VersionOne URL must begin with http:// or https://", "Invalid URL",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (DialogResult == DialogResult.None)
+                e.Cancel = true;
+        }
     }
 }

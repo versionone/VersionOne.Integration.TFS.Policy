@@ -61,6 +61,7 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             this.btnOk.TabIndex = 10;
             this.btnOk.Text = "&Ok";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -74,8 +75,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtUsername
             // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Enabled = false;
             this.txtUsername.Location = new System.Drawing.Point(117, 65);
             this.txtUsername.Name = "txtUsername";
@@ -85,8 +86,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtPassword
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Enabled = false;
             this.txtPassword.Location = new System.Drawing.Point(117, 95);
             this.txtPassword.Name = "txtPassword";
@@ -140,8 +141,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // cbUrl
             // 
-            this.cbUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbUrl.FormattingEnabled = true;
             this.cbUrl.Location = new System.Drawing.Point(117, 11);
             this.cbUrl.Name = "cbUrl";
@@ -179,8 +180,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtProxyUrl
             // 
-            this.txtProxyUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProxyUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProxyUrl.Location = new System.Drawing.Point(103, 20);
             this.txtProxyUrl.Name = "txtProxyUrl";
             this.txtProxyUrl.Size = new System.Drawing.Size(254, 20);
@@ -197,8 +198,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtProxyUsername
             // 
-            this.txtProxyUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProxyUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProxyUsername.Location = new System.Drawing.Point(103, 50);
             this.txtProxyUsername.Name = "txtProxyUsername";
             this.txtProxyUsername.Size = new System.Drawing.Size(254, 20);
@@ -215,8 +216,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtProxyPassword
             // 
-            this.txtProxyPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProxyPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProxyPassword.Location = new System.Drawing.Point(103, 80);
             this.txtProxyPassword.Name = "txtProxyPassword";
             this.txtProxyPassword.Size = new System.Drawing.Size(254, 20);
@@ -225,8 +226,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // grpProxySettings
             // 
-            this.grpProxySettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpProxySettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpProxySettings.Controls.Add(this.lblProxyUrl);
             this.grpProxySettings.Controls.Add(this.txtProxyUrl);
             this.grpProxySettings.Controls.Add(this.lblProxyUsername);
@@ -253,8 +254,8 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             // 
             // txtProxyDomain
             // 
-            this.txtProxyDomain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProxyDomain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProxyDomain.Location = new System.Drawing.Point(103, 110);
             this.txtProxyDomain.Name = "txtProxyDomain";
             this.txtProxyDomain.Size = new System.Drawing.Size(254, 20);
@@ -283,6 +284,7 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VersionOne Credentials";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Shown += new System.EventHandler(this.LoginForm_Shown);
             this.grpProxySettings.ResumeLayout(false);
             this.grpProxySettings.PerformLayout();
