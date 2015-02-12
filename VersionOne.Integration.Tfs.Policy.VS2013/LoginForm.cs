@@ -141,7 +141,7 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
             txtProxyUrl.Enabled = txtProxyUsername.Enabled = txtProxyPassword.Enabled = txtProxyDomain.Enabled = enabled;
         }
 
-        private bool IsSchemaValid(string url)
+        private bool IsValidVersionOneUrl(string url)
         {
             Uri uriResult;
             return Uri.TryCreate(url, UriKind.Absolute, out uriResult)
@@ -151,7 +151,7 @@ namespace VersionOne.Integration.Tfs.Policy.VS2013
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            if (!IsSchemaValid(cbUrl.Text))
+            if (!IsValidVersionOneUrl(cbUrl.Text))
             {
                 DialogResult = DialogResult.None;
                 MessageBox.Show("VersionOne URL must begin with http:// or https://", "Invalid URL",
