@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<metadata>
+<id>VersionOne.TFS.PolicyInstaller</id>
+<title>VersionOne.TFS.PolicyInstaller</title>
+<version>4.0.1.0</version>
+<authors>VersionOne, Inc.</authors>
+<owners>VersionOne, Inc.</owners>
+<summary>Ensure that commits checked into TFS via Visual Studio have VersionOne annotation.</summary>
+<description>VersionOne's TFS integration allows you to employ VersionOne in your TFS workflow.</description>
+<projectUrl>https://github.com/versionone/VersionOne.Integration.VSTFS</projectUrl>
+<tags>VersionOne TFS Visual Studio VS2013</tags>
+<licenseUrl>https://github.com/versionone/VersionOne.Integration.TFS.Policy/blob/master/VersionOne.Integration.Tfs.Policy.Deployment.Shared/LICENSE.md</licenseUrl>
+<requireLicenseAcceptance>false</requireLicenseAcceptance>
+</metadata>
+<files>
+<file src="tools\**" target="tools" />
+</files>
+</package>
