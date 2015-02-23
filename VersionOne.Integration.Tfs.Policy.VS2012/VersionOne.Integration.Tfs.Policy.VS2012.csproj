@@ -85,15 +85,16 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="VersionOne.Integration.Tfs.Core">
       <HintPath>..\packages\VersionOne.Integration.Tfs.Core.4.0.2.0\lib\net451\VersionOne.Integration.Tfs.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VersionOne.Integration.TFS.ServerConnector">
+      <HintPath>..\packages\VersionOne.Integration.TFS.ServerConnector.1.1.0.0\lib\net451\VersionOne.Integration.TFS.ServerConnector.dll</HintPath>
     </Reference>
     <Reference Include="VersionOne.Parsers">
       <HintPath>..\packages\VersionOne.Parsers.1.1.14195.67\lib\net45\VersionOne.Parsers.dll</HintPath>
     </Reference>
     <Reference Include="VersionOne.SDK.APIClient">
       <HintPath>..\packages\VersionOne.SDK.APIClient.14.1.1.295\lib\net45\VersionOne.SDK.APIClient.dll</HintPath>
-    </Reference>
-    <Reference Include="VersionOne.ServerConnector">
-      <HintPath>..\packages\VersionOne.ServerConnector.1.1.14282.201\lib\net451\VersionOne.ServerConnector.dll</HintPath>
     </Reference>
     <Reference Include="VersionOne.ServiceHost.Core">
       <HintPath>..\packages\VersionOne.ServiceHost.Core.1.1.0.0\lib\net451\VersionOne.ServiceHost.Core.dll</HintPath>
