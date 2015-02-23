@@ -35,7 +35,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VersionOne.Integration.Tfs.Policy.Deployment.VS2013</RootNamespace>
-    <AssemblyName>VersionOne.Integration.Tfs.Policy.Deployment.VS2013</AssemblyName>
+    <AssemblyName>VersionOne.Integration.Tfs.Policy.VS2013</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
