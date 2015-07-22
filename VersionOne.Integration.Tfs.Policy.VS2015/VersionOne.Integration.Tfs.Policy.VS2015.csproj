@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VersionOne.Integration.Tfs.Policy.VS2015</RootNamespace>
     <AssemblyName>VersionOne.Integration.Tfs.Policy</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
     </SccProjectName>
@@ -142,7 +142,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInForm.Designer.cs">
+      <DependentUpon>CheckInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IV1ComponentContainerProvider.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VersionOneTFSPolicy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -150,6 +170,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dependencies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckInForm.resx">
+      <DependentUpon>CheckInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProductIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
