@@ -184,11 +184,8 @@
     </Content>
     <Content Include="Dependencies\Microsoft.TeamFoundation.Client.dll" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.Common.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.Common.xml" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.xml" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
