@@ -7,7 +7,7 @@
     <ProjectGuid>{69C30447-3308-49BE-B924-8C4C12FFA803}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VersionOne.Integration.Tfs.Policy.VS2012</RootNamespace>
+    <RootNamespace>VersionOne.Integration.Tfs.Policy</RootNamespace>
     <AssemblyName>VersionOne.Integration.Tfs.Policy</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -150,11 +150,8 @@
     </Content>
     <Content Include="Dependencies\Microsoft.TeamFoundation.Client.dll" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.Common.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.Common.xml" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.xml" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2013\CheckInForm.resx">
@@ -176,6 +173,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

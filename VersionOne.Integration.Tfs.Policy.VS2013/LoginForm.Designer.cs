@@ -1,4 +1,4 @@
-namespace VersionOne.Integration.Tfs.Policy.VS2013
+namespace VersionOne.Integration.Tfs.Policy
 {
     partial class LoginForm
     {

@@ -13,7 +13,7 @@ using log4net;
 using Microsoft.Win32;
 using VersionOne.Integration.Tfs.Core.DataLayer;
 
-namespace VersionOne.Integration.Tfs.Policy.VS2013
+namespace VersionOne.Integration.Tfs.Policy
 {
     // TODO extract Registry operations
     public partial class CheckInForm : Form
