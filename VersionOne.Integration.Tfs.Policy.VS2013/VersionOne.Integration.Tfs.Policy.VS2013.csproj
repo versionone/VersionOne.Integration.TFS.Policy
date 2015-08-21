@@ -63,7 +63,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ProductIcon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FParsec">
@@ -149,51 +150,65 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckInForm.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.cs">
+      <Link>CheckInForm.cs</Link>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckInForm.designer.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.designer.cs">
+      <Link>CheckInForm.designer.cs</Link>
       <DependentUpon>CheckInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfigForm.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.cs">
+      <Link>ConfigForm.cs</Link>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfigForm.designer.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.designer.cs">
+      <Link>ConfigForm.designer.cs</Link>
       <DependentUpon>ConfigForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="IV1ComponentContainerProvider.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\IV1ComponentContainerProvider.cs">
+      <Link>IV1ComponentContainerProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.cs">
+      <Link>LoginForm.cs</Link>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.designer.cs">
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.designer.cs">
+      <Link>LoginForm.designer.cs</Link>
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="VersionOneTFSPolicy.cs" />
+    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\VersionOneTFSPolicy.cs">
+      <Link>VersionOneTFSPolicy.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CheckInForm.resx">
-      <DependentUpon>CheckInForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfigForm.resx">
-      <DependentUpon>ConfigForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ProductIcon.ico">
+      <Link>ProductIcon.ico</Link>
+    </Content>
     <Content Include="Dependencies\Microsoft.TeamFoundation.Client.dll" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.Common.dll" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll" />
     <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll" />
-    <Content Include="ProductIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.resx">
+      <Link>CheckInForm.resx</Link>
+      <DependentUpon>CheckInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.resx">
+      <Link>ConfigForm.resx</Link>
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.resx">
+      <Link>LoginForm.resx</Link>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
