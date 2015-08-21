@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="9D7E0DF5-0A4D-4B43-9D73-4AD3F83260FA" Version="1.2" Language="en-US" Publisher="VersionOne" />
+        <Identity Id="9D7E0DF5-0A4D-4B43-9D73-4AD3F83260FA" Version="1.3" Language="en-US" Publisher="VersionOne" />
         <DisplayName>VersionOne TFS Checkin Policy</DisplayName>
         <Description xml:space="preserve">TFS Checkin policy from VersionOne for Visual Studio 2013.  Requires code commits to contain a VersionOne identifier</Description>
         <License>LICENSE.md</License>
