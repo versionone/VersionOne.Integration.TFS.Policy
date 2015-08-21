@@ -7,7 +7,7 @@
     <ProjectGuid>{69C30447-3308-49BE-B924-8C4C12FFA803}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VersionOne.Integration.Tfs.Policy.VS2012</RootNamespace>
+    <RootNamespace>VersionOne.Integration.Tfs.Policy</RootNamespace>
     <AssemblyName>VersionOne.Integration.Tfs.Policy</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -93,11 +93,11 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="VersionOne.Integration.Tfs.Core, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\VersionOne.Integration.Tfs.Core.4.0.2.0\lib\net451\VersionOne.Integration.Tfs.Core.dll</HintPath>
+      <HintPath>..\packages\VersionOne.Integration.Tfs.Core.4.0.3.0\lib\net451\VersionOne.Integration.Tfs.Core.dll</HintPath>
     </Reference>
     <Reference Include="VersionOne.Integration.Tfs.ServerConnector, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\VersionOne.Integration.Tfs.ServerConnector.4.0.2.0\lib\net451\VersionOne.Integration.Tfs.ServerConnector.dll</HintPath>
+      <HintPath>..\packages\VersionOne.Integration.Tfs.ServerConnector.4.0.3.0\lib\net451\VersionOne.Integration.Tfs.ServerConnector.dll</HintPath>
     </Reference>
     <Reference Include="VersionOne.Parsers">
       <HintPath>..\packages\VersionOne.Parsers.1.1.0.0\lib\net45\VersionOne.Parsers.dll</HintPath>

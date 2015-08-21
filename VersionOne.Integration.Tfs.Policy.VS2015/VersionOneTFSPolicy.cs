@@ -9,7 +9,7 @@ using log4net.Repository.Hierarchy;
 using Microsoft.TeamFoundation.VersionControl.Client;
 using VersionOne.Integration.Tfs.Core.DataLayer;
 
-namespace VersionOne.Integration.Tfs.Policy.VS2015
+namespace VersionOne.Integration.Tfs.Policy
 {
     [Serializable]
     public class VersionOneTFSPolicy : PolicyBase, IV1ComponentContainerProvider
