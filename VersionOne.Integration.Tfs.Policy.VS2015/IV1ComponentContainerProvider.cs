@@ -1,6 +1,6 @@
 ﻿using VersionOne.Integration.Tfs.Core.DataLayer;
 
-namespace VersionOne.Integration.Tfs.Policy.VS2015
+namespace VersionOne.Integration.Tfs.Policy
 {
     public interface IV1ComponentContainerProvider
     {

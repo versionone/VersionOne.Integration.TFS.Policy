@@ -1,4 +1,4 @@
-namespace VersionOne.Integration.Tfs.Policy.VS2015 {
+namespace VersionOne.Integration.Tfs.Policy {
     partial class CheckInForm {
         /// <summary>
         /// Required designer variable.
