@@ -15,7 +15,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VersionOne.Integration.Tfs.Policy.Deployment.VS2015</RootNamespace>
-    <AssemblyName>VersionOne.Integration.Tfs.Policy.Deployment.VS2015</AssemblyName>
+    <AssemblyName>VersionOne.Integration.Tfs.Policy.VS2015</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
