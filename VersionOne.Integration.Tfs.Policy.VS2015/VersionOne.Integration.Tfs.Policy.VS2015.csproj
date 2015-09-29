@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69C30447-3308-49BE-B924-8C4C12FFA803}</ProjectGuid>
+    <ProjectGuid>{DAB643FD-A2C5-412F-B806-B6B50550EB36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VersionOne.Integration.Tfs.Policy</RootNamespace>
@@ -21,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +29,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FParsec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=40ccfc0a09edbb5d, processorArchitecture=MSIL">
@@ -53,19 +51,19 @@
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.TeamFoundation.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Microsoft.TeamFoundation.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.TeamFoundation.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Microsoft.TeamFoundation.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.VersionControl.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.TeamFoundation.VersionControl.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
     </Reference>
@@ -86,13 +84,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
     <Reference Include="VersionOne.Integration.Tfs.Core, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VersionOne.Integration.Tfs.Core.4.0.3.0\lib\net451\VersionOne.Integration.Tfs.Core.dll</HintPath>
       <Private>True</Private>
@@ -115,65 +116,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.cs">
-      <Link>CheckInForm.cs</Link>
+    <Compile Include="CheckInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.designer.cs">
-      <Link>CheckInForm.designer.cs</Link>
+    <Compile Include="CheckInForm.Designer.cs">
       <DependentUpon>CheckInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.cs">
-      <Link>ConfigForm.cs</Link>
+    <Compile Include="ConfigForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.designer.cs">
-      <Link>ConfigForm.designer.cs</Link>
+    <Compile Include="ConfigForm.Designer.cs">
       <DependentUpon>ConfigForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\IV1ComponentContainerProvider.cs">
-      <Link>IV1ComponentContainerProvider.cs</Link>
-    </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.cs">
-      <Link>LoginForm.cs</Link>
+    <Compile Include="IV1ComponentContainerProvider.cs" />
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.designer.cs">
-      <Link>LoginForm.designer.cs</Link>
+    <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="..\VersionOne.Integration.Tfs.Policy.VS2015\VersionOneTFSPolicy.cs">
-      <Link>VersionOneTFSPolicy.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ProductIcon.ico">
-      <Link>ProductIcon.ico</Link>
-    </Content>
-    <Content Include="Dependencies\Microsoft.TeamFoundation.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.Common.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll" />
-    <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\CheckInForm.resx">
-      <Link>CheckInForm.resx</Link>
-      <DependentUpon>CheckInForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\ConfigForm.resx">
-      <Link>ConfigForm.resx</Link>
-      <DependentUpon>ConfigForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\VersionOne.Integration.Tfs.Policy.VS2015\LoginForm.resx">
-      <Link>LoginForm.resx</Link>
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="VersionOneTFSPolicy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\Microsoft.TeamFoundation.Client.dll" />
+    <Content Include="Dependencies\Microsoft.TeamFoundation.Common.dll" />
+    <Content Include="Dependencies\Microsoft.TeamFoundation.VersionControl.Client.dll" />
+    <Content Include="Dependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.dll" />
+    <Content Include="ProductIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckInForm.resx">
+      <DependentUpon>CheckInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

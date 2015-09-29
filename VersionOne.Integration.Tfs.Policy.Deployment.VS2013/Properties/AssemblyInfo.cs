@@ -15,3 +15,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright 2008-2015, VersionOne, Inc., Licensed under modified BSD.")]
 
 [assembly: AssemblyConfiguration("Release")]
+[assembly: ComVisible(false)]
+
